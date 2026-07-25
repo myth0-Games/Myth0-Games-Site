@@ -1,15 +1,39 @@
+---
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/icon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta
+			name="description"
+			content="Myth0 Games is an independent game development studio focused on creating games, 
+			Unity tools, and Minecraft mods."
+		/>
+		<meta property="og:title" content="Myth0 Games" />
+		<meta property="og:description" content="Games • Dev Tools • Mods" />
+		<meta property="og:image" content="/banner.png" />
+		<title>Myth0 Games</title>
 	</head>
 	<body>
 		<slot />
+		<footer>
+			<p>
+				© 2026 Myth0 Games
+				<br>
+				<a href="mailto:myth07games@gmail.com">Contact</a>
+				&ensp;·&ensp;
+				<a href="https://myth0-games.github.io/LayerFXDocs/">LayerFX Documentation</a>
+			</p>
+		</footer>
 	</body>
 </html>
 

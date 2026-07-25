@@ -1,0 +1,172 @@
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.line-break {
+    height: 5px;
+    border: none;
+    background-color: rgb(26, 58, 107);
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1, h2, h3, h4 {
+    text-align:center;
+    color: rgb(140, 140, 150);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    color: rgb(209, 210, 224);
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+strong {
+    font-weight: 600;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+body {
+    background-color: rgb(15, 16, 20);
+    color: rgb(209, 210, 224);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text);
+    font-weight: 400;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    margin: 4rem 0;
+}
+
+.showcase-item {
+    margin: 0;
+    background: rgb(10, 11, 15);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    transition: transform .2s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-4px);
+}
+
+.showcase-item figcaption {
+    padding: 1.25rem;
+}
+
+.showcase-item img {
+    width: 100%;
+    display: block;
+
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+.showcase-item h3 {
+    margin: 1rem 0 0.5rem;
+    font-weight: 300;
+}
+
+.showcase-item p {
+    margin: 0;
+    color: rgb(209, 210, 224);
+    line-height: 1.6;
+    text-align: left;
+}
+
+a {
+  color: rgb(127, 166, 189);
+}
+
+@media (max-width: 900px) {
+    .showcase {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+}
+
+.tools li {
+    background: rgb(25, 27, 34);
+    border: 1px solid rgb(45, 48, 60);
+
+    padding: 0.55rem 1rem;
+
+    border-radius: 999px;
+
+    font-size: 0.95rem;
+
+    
+
+    color: rgb(215,215,225);
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem;
+
+    text-align: center;
+
+    border-top: 1px solid rgb(40, 42, 50);
+
+    color: rgb(140, 140, 150);
+
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: rgb(170, 190, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

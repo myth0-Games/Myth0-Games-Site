@@ -1,11 +1,104 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <section class="hero">
+    <img src="/banner.png" alt="Myth0 Games" />
+  </section>
+
+  <main class="content">
+	<hr class="line-break">
+	<h1>About Myth0 Games</h1>
+    <p>
+      Myth0 Games is an independent game development studio focused on creating immersive fantasy worlds and practical 
+	  development tools. From games to open-source projects and Asset Store tools, every project is built with 
+	  a focus on quality, performance, and ease of use.
+    </p>
+	<hr class="line-break">
+	<h1>Projects</h1>
+	<section class="showcase">
+		<figure class="showcase-item">
+			<img src="/stormfall_banner.png" alt="Stormfall Banner" />
+
+			<figcaption>
+				<h3>Stormfall</h3>
+
+				<p>
+					Stormfall (title tentative) is a 2D metroidvania action-platformer drawing inspiration from legendary fantasy
+					stories and other great 2D platformers.
+
+					This is the flagship project of Myth0 Games. It is currently under heavy development.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="showcase-item">
+			<img src="/layerfx_banner.png" alt="LayerFX Banner" />
+
+			<figcaption>
+				<h3>LayerFX</h3>
+
+				<p>
+					LayerFX is a powerful tool for Unity 6 URP, allowing users to render fullscreen effects to specific layers only.
+					It provides fine control for post-processing and VFX that isn't found in Unity's default systems. 
+					<br>
+					LayerFX is coming soon to the Unity Asset Store! Visit 
+					the <a href="https://myth0-games.github.io/LayerFXDocs/">LayerFX Website</a> to learn more.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="showcase-item">
+			<img src="/je_banner.png" alt="Journey's End Banner" />
+
+			<figcaption>
+				<h3>Journey's End</h3>
+
+				<p>
+					Prior to focusing on original game development, Myth0 Games created mods for other games, including the 
+					Journey's End mod.
+					Journey's End is a mod for Minecraft Forge 1.21 that overhauls the End dimension, adding massive,
+					procedurally-generated dungeons full of dangerous new enemies.
+				</p>
+			</figcaption>
+		</figure>
+	</section>
+
+	<hr class="line-break">
+
+	<h1>Development Tools</h1>
+
+	<ul class="tools">
+		<li>Unity</li>
+		<li>C#</li>
+		<li>Universal Render Pipeline (URP)</li>
+		<li>Shader Graph</li>
+		<li>HLSL</li>
+		<li>Minecraft Forge</li>
+		<li>Java</li>
+		<li>Krita</li>
+		<li>Fusion 360</li>
+		<li>DaVinci Resolve</li>
+	</ul>
+
+	<hr class="line-break">
+
+	<h1>Our Goal</h1>
+	<p>Our goal is to create game worlds that players will want to return to time and time again. We believe the best games 
+		combine compelling storytelling, memorable music, thoughtful design, and strong technical foundations. Great 
+		games are one of the highest forms of interactive art.
+	</p>
+
+	<hr class="line-break">
+
+	<h1>Contact Us</h1>
+	<p>You can contact Myth0 Games at:
+		<br>
+		<strong>myth07games@gmail.com</strong>
+	</p>
+
+	<hr class="line-break">
+  </main>
 </Layout>
