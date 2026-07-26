@@ -8,5 +8,5 @@ export default defineConfig({
   },
 
   site: 'https://myth0-games.github.io',
-  base: '/Myth0-Games-Site'
+  base: '/Myth0-Games-Site/'
 });
